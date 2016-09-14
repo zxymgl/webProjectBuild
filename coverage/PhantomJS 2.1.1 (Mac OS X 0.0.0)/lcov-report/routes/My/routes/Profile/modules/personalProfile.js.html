@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for routes/My/routes/Profile/modules/personalProfile.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">all files</a> / <a href="index.html">routes/My/routes/Profile/modules/</a> personalProfile.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>42/84</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">41.38% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>12/29</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">9.09% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/22</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">49.28% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>34/69</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Immutable, { Record, Map, List } from 'immutable'
+&nbsp;
+<span class="missing-if-branch" title="if path not taken" >I</span>if (typeof process !== 'undefined' &amp;&amp; process.env.IS_BROWSER) {
+<span class="cstat-no" title="statement not covered" >  r</span>equire('es6-promise').polyfill()
+<span class="cstat-no" title="statement not covered" >  r</span>equire('whatwg-fetch')
+}
+&nbsp;
+import apiFactory from 'api/apiFactory'
+const api = apiFactory()
+&nbsp;
+const GET_PERSONAL_PROFILE_REQUEST = 'GET_PERSONAL_PROFILE_REQUEST'
+const GET_PERSONAL_PROFILE_SUCCESS = 'GET_PERSONAL_PROFILE_SUCCESS'
+const GET_PERSONAL_PROFILE_FAILURE = 'GET_PERSONAL_PROFILE_FAILURE'
+&nbsp;
+const GET_COMPANY_PROFILE_REQUEST = 'GET_COMPANY_PROFILE_REQUEST'
+const GET_COMPANY_PROFILE_SUCCESS = 'GET_COMPANY_PROFILE_SUCCESS'
+const GET_COMPANY_PROFILE_FAILURE = 'GET_COMPANY_PROFILE_FAILURE'
+&nbsp;
+const GET_COMPANY_TELEPHONE_REQUEST = 'GET_COMPANY_TELEPHONE_REQUEST'
+const GET_COMPANY_TELEPHONE_SUCCESS = 'GET_COMPANY_TELEPHONE_SUCCESS'
+const GET_COMPANY_TELEPHONE_FAILURE = 'GET_COMPANY_TELEPHONE_FAILURE'
+&nbsp;
+const GET_COMPANY_WEBSITE_REQUEST = 'GET_COMPANY_WEBSITE_REQUEST'
+const GET_COMPANY_WEBSITE_SUCCESS = 'GET_COMPANY_WEBSITE_SUCCESS'
+const GET_COMPANY_WEBSITE_FAILURE = 'GET_COMPANY_WEBSITE_FAILURE'
+&nbsp;
+const GET_PERSONAL_EMAIL_ADDRESS_REQUEST = 'GET_PERSONAL_EMAIL_ADDRESS_REQUEST'
+const GET_PERSONAL_EMAIL_ADDRESS_SUCCESS = 'GET_PERSONAL_EMAIL_ADDRESS_SUCCESS'
+const GET_PERSONAL_EMAIL_ADDRESS_FAILURE = 'GET_PERSONAL_EMAIL_ADDRESS_FAILURE'
+&nbsp;
+const getPersonalProfile = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >p</span></span>artId =&gt; <span class="fstat-no" title="function not covered" >dispatch =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  d</span>ispatch({ type: GET_PERSONAL_PROFILE_REQUEST })
+<span class="cstat-no" title="statement not covered" >  r</span>eturn api.parties.persons.one.get(partId).then(<span class="fstat-no" title="function not covered" >json =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    d</span>ispatch({ type: GET_PERSONAL_PROFILE_SUCCESS, payload: json })
+  }).catch(<span class="fstat-no" title="function not covered" >error =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    d</span>ispatch({ type: GET_PERSONAL_PROFILE_FAILURE, payload: error })
+  })
+}
+&nbsp;
+const getCompanyProfile = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >p</span></span>artId =&gt; <span class="fstat-no" title="function not covered" >dispatch =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  d</span>ispatch({ type: GET_COMPANY_PROFILE_REQUEST })
+<span class="cstat-no" title="statement not covered" >  r</span>eturn api.parties.organizations.one.get(partId)
+    .then(<span class="fstat-no" title="function not covered" >json =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      d</span>ispatch({ type: GET_COMPANY_PROFILE_SUCCESS, payload: json })
+    }).catch(<span class="fstat-no" title="function not covered" >error =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      d</span>ispatch({ type: GET_COMPANY_PROFILE_FAILURE, payload: error })
+    })
+}
+&nbsp;
+const getCompanyTelephone = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >c</span></span>ontactMechId =&gt; <span class="fstat-no" title="function not covered" >dispatch =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  d</span>ispatch({ type: GET_COMPANY_TELEPHONE_REQUEST })
+<span class="cstat-no" title="statement not covered" >  r</span>eturn api.parties.contactMechs.telecomNumbers.one.get(contactMechId).then(<span class="fstat-no" title="function not covered" >json =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    d</span>ispatch({ type: GET_COMPANY_TELEPHONE_SUCCESS, payload: json })
+  }).catch(<span class="fstat-no" title="function not covered" >error =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    d</span>ispatch({ type: GET_COMPANY_TELEPHONE_FAILURE, payload: error })
+  })
+}
+&nbsp;
+const getCompanyWebsite = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >c</span></span>ontactMechId =&gt; <span class="fstat-no" title="function not covered" >dispatch =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  d</span>ispatch({ type: GET_COMPANY_WEBSITE_REQUEST })
+<span class="cstat-no" title="statement not covered" >  r</span>eturn api.parties.contactMechs.webAddresses.one.get(contactMechId).then(<span class="fstat-no" title="function not covered" >json =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    d</span>ispatch({ type: GET_COMPANY_WEBSITE_SUCCESS, payload: json })
+  }).catch(<span class="fstat-no" title="function not covered" >error =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    d</span>ispatch({ type: GET_COMPANY_WEBSITE_FAILURE, payload: error })
+  })
+}
+&nbsp;
+const getPersonalEmailAddress = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >c</span></span>ontactMechId =&gt; <span class="fstat-no" title="function not covered" >dispatch =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  d</span>ispatch({ type: GET_PERSONAL_EMAIL_ADDRESS_REQUEST })
+<span class="cstat-no" title="statement not covered" >  r</span>eturn api.parties.contactMechs.emailAddresses.one.get(contactMechId).then(<span class="fstat-no" title="function not covered" >json =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    d</span>ispatch({ type: GET_PERSONAL_EMAIL_ADDRESS_SUCCESS, payload: json })
+  }).catch(<span class="fstat-no" title="function not covered" >error =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    d</span>ispatch({ type: GET_PERSONAL_EMAIL_ADDRESS_FAILURE, payload: error })
+  })
+}
+&nbsp;
+let InitialState = Record({
+  isPersonalProfileLoading: false,
+  isCompanyProfileLoading: false,
+  isEmailAddressLoading: false,
+  isWebsiteAddressLoading: false,
+  emailAddress: '',
+  webAddress: '',
+  gender: '',
+  firstName: '',
+  lastName: '',
+  organizationName: '',
+  officeSiteName: '',
+  contactNumber: ''
+})
+&nbsp;
+export const actions = {
+  getPersonalProfile,
+  getCompanyProfile,
+  getCompanyTelephone,
+  getCompanyWebsite,
+  getPersonalEmailAddress
+}
+&nbsp;
+const initialState = new InitialState()
+&nbsp;
+export default function personalProfileReducer (state = initialState, action) <span class="branch-1 cbranch-no" title="branch not covered" >{</span>
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (!(state instanceof InitialState)) <span class="cstat-no" title="statement not covered" >r</span>eturn initialState.merge(state)
+&nbsp;
+  let json
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (action.payload) <span class="cstat-no" title="statement not covered" >j</span>son = action.payload
+&nbsp;
+  switch (action.type) {
+    case GET_PERSONAL_PROFILE_REQUEST:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isPersonalProfileLoading', true)
+    case GET_PERSONAL_PROFILE_SUCCESS:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isPersonalProfileLoading', false)
+        .set('firstName', json.firstName)
+        .set('lastName', json.lastName)
+    case GET_PERSONAL_PROFILE_FAILURE:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isPersonalProfileLoading', false)
+&nbsp;
+    case GET_COMPANY_PROFILE_REQUEST:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isCompanyProfileLoading', true)
+    case GET_COMPANY_PROFILE_SUCCESS:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isCompanyProfileLoading', false)
+        .set('organizationName', json.organizationName)
+        .set('officeSiteName', json.officeSiteName)
+    case GET_COMPANY_PROFILE_FAILURE:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isCompanyProfileLoading', false)
+&nbsp;
+    case GET_COMPANY_TELEPHONE_SUCCESS:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('contactNumber', json.contactNumber)
+&nbsp;
+    case GET_COMPANY_WEBSITE_REQUEST:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isWebsiteAddressLoading', true)
+    case GET_COMPANY_WEBSITE_SUCCESS:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isWebsiteAddressLoading', false)
+    case GET_COMPANY_WEBSITE_FAILURE:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isWebsiteAddressLoading', false)
+&nbsp;
+    case GET_PERSONAL_EMAIL_ADDRESS_REQUEST:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isEmailAddressLoading', true)
+    case GET_PERSONAL_EMAIL_ADDRESS_SUCCESS:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isEmailAddressLoading', false)
+    case GET_PERSONAL_EMAIL_ADDRESS_FAILURE:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isEmailAddressLoading', false)
+&nbsp;
+  }
+&nbsp;
+  return state
+}
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Jul 22 2016 09:44:08 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>

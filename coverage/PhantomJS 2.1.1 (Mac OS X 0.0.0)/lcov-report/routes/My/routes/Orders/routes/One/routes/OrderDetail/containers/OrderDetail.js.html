@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for routes/My/routes/Orders/routes/One/routes/OrderDetail/containers/OrderDetail.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../../../../index.html">all files</a> / <a href="index.html">routes/My/routes/Orders/routes/One/routes/OrderDetail/containers/</a> OrderDetail.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">51.65% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>47/91</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">43.75% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>7/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">56.41% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>22/39</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">5 functions</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import { withRouter } from 'react-router'
+import Table from 'react-bootstrap/lib/Table'
+import ButtonGroup from 'react-bootstrap/lib/ButtonGroup'
+import Button from 'react-bootstrap/lib/Button'
+import styles from './OrderDetail.scss'
+import ChatImg from '../assets/u347.png'
+import classNames from 'classnames'
+import OrderProgress from '../components/OrderProgress'
+import { actions as orderDetailActions } from '../modules/orderDetail'
+&nbsp;
+<span class="fstat-no" title="function not covered" >function mapStateToProps (state) {</span>
+<span class="cstat-no" title="statement not covered" >  r</span>eturn {
+    statusId: state.my.orders.one.detail.statusId,
+    orderId: state.my.orders.one.detail.orderId,
+    productId: state.my.orders.one.detail.productId,
+    provider: state.my.orders.one.detail.provider,
+    orderName: '',
+    contactNumber: state.my.orders.one.detail.contactNumber,
+    customerNumber: state.my.orders.one.detail.customerNumber,
+    lastName: state.my.orders.one.detail.lastName
+  }
+}
+<span class="fstat-no" title="function not covered" >function mapDispatchToProps (dispatch) {</span>
+<span class="cstat-no" title="statement not covered" >  r</span>eturn {
+    actions: bindActionCreators(orderDetailActions, dispatch),
+    dispatch
+  }
+}
+&nbsp;
+const ChatWindow = <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span></span></span></span></span></span></span></span></span>{ lastName, provider, orderName, orderId, productId, contactNumber, customerNumber }) =&gt; (
+  &lt;div className='col-md-12'&gt;
+    &lt;div className='col-md-1'&gt;&lt;/div&gt;
+    &lt;div className='col-md-10'&gt;
+      &lt;Table className={styles.tt} bordered&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th className={styles.tab}&gt;&lt;span&gt;&lt;h3&gt;订单信息&lt;/h3&gt;&lt;/span&gt;&lt;/th&gt;
+            &lt;th className={styles.tb}&gt;&lt;span&gt;&lt;h3&gt;联系服务商&lt;/h3&gt;&lt;/span&gt;&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;th rowSpan='2'&gt;
+              &lt;OrderInfo lastName={lastName} customerNumber={customerNumber} contactNumber={contactNumber} provider={provider} productId={productId} orderId={orderId} orderName={orderName} /&gt;
+            &lt;/th&gt;
+            &lt;td colSpan='2'&gt;&lt;div id='content' className={styles.content}&gt;&lt;/div&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td colSpan='2'&gt;
+              &lt;div&gt;
+                &lt;div className={styles.window}&gt;
+                  &lt;ButtonGroup&gt;
+                    &lt;Button className={styles.bt}&gt;&lt;i className='fa fa-smile-o'&gt;&lt;/i&gt;&lt;/Button&gt;
+                    &lt;Button className={styles.bt}&gt;&lt;i className='fa fa-folder-open'&gt;&lt;/i&gt;&lt;/Button&gt;
+                    &lt;Button className={styles.bt}&gt;&lt;i className='fa fa-scissors'&gt;&lt;/i&gt;&lt;/Button&gt;
+                    &lt;Button className={styles.bt}&gt;&lt;i className='fa fa-video-camera'&gt;&lt;/i&gt;&lt;/Button&gt;
+                    &lt;Button className={styles.bt}&gt;&lt;i className='fa fa-microphone'&gt;&lt;/i&gt;&lt;/Button&gt;
+                  &lt;/ButtonGroup&gt;
+                &lt;/div&gt;
+                &lt;div className={styles.window}&gt;
+                  &lt;textarea type='text' className={styles.in} /&gt;
+                &lt;/div&gt;
+                &lt;div className={styles.window}&gt;
+                  &lt;button className='pull-right btn btn-white btn-sm'&gt;发送&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/Table&gt;
+    &lt;/div&gt;
+    &lt;div className='col-md-1'&gt;&lt;/div&gt;
+  &lt;/div&gt;
+)
+const OrderInfo = <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span></span></span></span></span></span></span></span></span>{ lastName, customerNumber, contactNumber, provider, orderName, productId, orderId }) =&gt; (
+  &lt;div className={styles.windows}&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;div&gt;
+      &lt;div className={styles.title}&gt;代理服务提供商&lt;/div&gt;
+      &lt;div className={styles.companyName}&gt;{provider.organizationName}&lt;/div&gt;
+      &lt;div&gt;公司电话&amp;nbsp;:&amp;nbsp;{contactNumber}&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;div&gt;
+      &lt;div className={styles.title}&gt;服务公司&lt;/div&gt;
+      &lt;div&gt;{productId}&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;div&gt;
+      &lt;div className={styles.title}&gt;订单人&lt;/div&gt;
+      &lt;div&gt;{lastName}&amp;nbsp;&amp;nbsp;{customerNumber}&lt;/div&gt;
+      &lt;div&gt;邮箱：&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;div&gt;
+      &lt;div className={styles.title}&gt;订购服务&lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;div&gt;
+      &lt;div className={styles.title}&gt;订单号&lt;/div&gt;
+      &lt;div&gt;{orderId}&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+)
+const OrderProtessStatus = <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span></span></span>{ statusId }) =&gt; (
+  &lt;div className='col-md-2'&gt;
+    &lt;div className='text-center'&gt;&lt;h1&gt;&lt;strong&gt;{statusId}&lt;/strong&gt;&lt;/h1&gt;&lt;/div&gt;
+    &lt;div className={classNames(styles.marginer, 'text-center')}&gt;&lt;h5&gt;剩余23小时51分钟&lt;/h5&gt;&lt;/div&gt;
+    &lt;div className={classNames(styles.marker, 'text-center')}&gt;
+      &lt;button type='submit' className={styles.pay}&gt;
+        &lt;strong&gt;立即付款&lt;/strong&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+)
+const OrderStatus = <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span></span></span>{ statusId }) =&gt; (
+  &lt;div className={styles.leftpds}&gt;
+    &lt;h3&gt;订单状态：&amp;nbsp;&amp;nbsp;{statusId}&amp;nbsp;&amp;nbsp;商品已拍下，等待买家付款&lt;/h3&gt;
+  &lt;/div&gt;
+)
+const OrderTitle = <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span></span></span>{ orderId }) =&gt; (
+  &lt;div&gt;
+    &lt;div className={styles.header}&gt;
+      &lt;div className={styles.pp}&gt;订单中心&amp;nbsp;&gt;&amp;nbsp;订单号：{orderId}&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br /&gt;
+    &lt;p className={styles.p}&gt;&lt;/p&gt;
+  &lt;/div&gt;
+)
+&nbsp;
+class OrderDetail extends React.Component {
+<span class="fstat-no" title="function not covered" >  constructor (props) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span>
+    super(props)
+<span class="cstat-no" title="statement not covered" >    t</span>his.state = {
+      status: 'OrderOpen'
+    }
+<span class="cstat-no" title="statement not covered" >    t</span>his._bind('_onPayOnline', '_onChange')
+  }
+  _bind (...<span class="cstat-no" title="statement not covered" >methods) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span>
+<span class="cstat-no" title="statement not covered" >    m</span>ethods.forEach(<span class="fstat-no" title="function not covered" >(method) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      t</span>his[method] = this[method].bind(this)
+    })
+  }
+  render () {
+<span class="cstat-no" title="statement not covered" >    r</span>eturn (
+      &lt;div&gt;
+        &lt;div className='col-md-12'&gt;
+          &lt;div className='col-md-11'&gt;
+            &lt;OrderTitle orderId={this.props.orderId} /&gt;
+            &lt;div className='col-md-12'&gt;
+              &lt;OrderProtessStatus statusId={this.props.statusId} /&gt;
+              &lt;div className='col-md-10'&gt;
+                &lt;br /&gt;
+                &lt;div className='text-center'&gt;&lt;h5&gt;该订单会为您保留24小时（从下单之日算起），24小时之后如果还未付款，系统将自动取消该订单。&lt;/h5&gt;&lt;/div&gt;
+                &lt;br /&gt;
+                &lt;div className={styles.progress}&gt;
+                  &lt;br /&gt;
+                  &lt;OrderProgress status={'one'} /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;OrderStatus statusId={this.props.statusId} /&gt;
+            &lt;ChatWindow lastName={this.props.lastName} customerNumber={this.props.customerNumber} contactNumber={this.props.contactNumber} productId={this.props.productId} provider={this.props.provider} orderId={this.props.orderId} orderName={this.props.orderName} /&gt;
+          &lt;/div&gt;
+          &lt;div className='col-md-1'&gt;
+            &lt;span className='pull-right'&gt;
+              &lt;img src={ChatImg} className={styles.chat} /&gt;
+            &lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    )
+  }
+  componentDidMount () <span class="cstat-no" title="statement not covered" >{</span>
+    let { orderId } = this.props.params
+<span class="cstat-no" title="statement not covered" >    t</span>his.props.actions.getOrderDetail('ZHISHUO_0001')
+<span class="cstat-no" title="statement not covered" >    t</span>his.props.actions.getOrderItem('ZHISHUO_0001')
+<span class="cstat-no" title="statement not covered" >    t</span>his.props.actions.getOrderStatus('ZHISHUO_0001')
+<span class="cstat-no" title="statement not covered" >    t</span>his.props.actions.getContactMechs('ORG_XIAOXIANG_CORPORATION')
+<span class="cstat-no" title="statement not covered" >    t</span>his.props.actions.getProviderTelephone('XIAOXIANG_CmtTelecomNumber')
+<span class="cstat-no" title="statement not covered" >    t</span>his.props.actions.getCustomerContactMechs('ORG_PUDAO_ZHENGYX')
+<span class="cstat-no" title="statement not covered" >    t</span>his.props.actions.getCustomerTelephone('ZHENGYX_CmtTelecomNumber')
+<span class="cstat-no" title="statement not covered" >    t</span>his.props.actions.getCustomerOrderer('ORG_PUDAO_ZHENGYX')
+  }
+  _onPayOnline () {
+  }
+  _onChange () {
+  }
+}
+&nbsp;
+OrderDetail.propTypes = {
+  actions: React.PropTypes.object.isRequired,
+  provider: React.PropTypes.object
+}
+&nbsp;
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(OrderDetail))
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Jul 22 2016 09:44:08 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../../../../sorter.js"></script>
+</body>
+</html>

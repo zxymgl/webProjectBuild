@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for routes/OrdersManagement/components/ServiceReviewStars/ServiceReviewStars.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">all files</a> / <a href="index.html">routes/OrdersManagement/components/ServiceReviewStars/</a> ServiceReviewStars.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">64.86% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>24/37</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">60% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">30.77% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>4/13</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">1 function</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { PropTypes } from 'react'
+&nbsp;
+import StarRating from 'routes/Order/OrderPlacing/components/Score/components/StarRating'
+class ServiceReviewStars extends React.Component {
+<span class="fstat-no" title="function not covered" >  constructor (props) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span></span>
+    super(props)
+<span class="cstat-no" title="statement not covered" >    t</span>his.state = {
+    }
+<span class="cstat-no" title="statement not covered" >    t</span>his._renderStart = this._renderStart.bind(this)
+  }
+  static propTypes = {
+    startLeavel: PropTypes.string
+  }
+  _renderStart = <span class="fstat-no" title="function not covered" >(startCount, cstarKind) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    v</span>ar doms = []
+<span class="cstat-no" title="statement not covered" >    for (let i = 0; i &lt; startCount; i++) {</span>
+<span class="cstat-no" title="statement not covered" >      d</span>oms.push(&lt;StarRating key={i + 1} isLight={true}  startLeavel={i + 1} /&gt;)
+    }
+<span class="cstat-no" title="statement not covered" >    for (let i = 0; i &lt; (5 - startCount); i++) {</span>
+<span class="cstat-no" title="statement not covered" >      d</span>oms.push(&lt;StarRating key={startCount + i + 1} isLight={false} startLeavel={startCount + i + 1} /&gt;)
+    }
+<span class="cstat-no" title="statement not covered" >    r</span>eturn doms
+  }
+  render () {
+<span class="cstat-no" title="statement not covered" >    r</span>eturn (
+      &lt;div&gt;
+        {this._renderStart(this.props.startLeavel)}
+        &lt;span&gt;&lt;small&gt;{this.props.startLeavel}分&lt;/small&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      )
+  }
+}
+export default ServiceReviewStars
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Jul 22 2016 09:44:08 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

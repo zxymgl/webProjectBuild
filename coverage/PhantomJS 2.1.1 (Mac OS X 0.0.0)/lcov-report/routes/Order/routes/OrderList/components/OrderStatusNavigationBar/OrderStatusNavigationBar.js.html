@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for routes/Order/routes/OrderList/components/OrderStatusNavigationBar/OrderStatusNavigationBar.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../index.html">all files</a> / <a href="index.html">routes/Order/routes/OrderList/components/OrderStatusNavigationBar/</a> OrderStatusNavigationBar.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">55.81% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>24/43</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">28.57% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">46.15% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">26.32% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>5/19</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">4 functions</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'
+import { Link } from 'react-router'
+import styles from './OrderStatusNavigationBar.scss'
+class OrderStatusNavigationBar extends React.Component {
+<span class="fstat-no" title="function not covered" >  constructor (props) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span>
+    super(props)
+<span class="cstat-no" title="statement not covered" >    t</span>his.state = {
+      type: 'one',
+      SwitchMenuIndex: 1
+    }
+<span class="cstat-no" title="statement not covered" >    t</span>his._handleSwitchMenuIndex = this._handleSwitchMenuIndex.bind(this)
+  }
+  _bind (...<span class="cstat-no" title="statement not covered" >methods) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span>
+<span class="cstat-no" title="statement not covered" >    m</span>ethods.forEach(<span class="fstat-no" title="function not covered" >(method) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      t</span>his[method] = this[method].bind(this)
+    })
+  }
+  render () <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    r</span>eturn (
+      &lt;div className='col-lg-12 border-bottom'&gt;
+        &lt;ul className='nav navbar-nav '&gt;
+          &lt;li className={this.state.SwitchMenuIndex === 1 &amp;&amp; styles.active} onClick={<span class="fstat-no" title="function not covered" >() =&gt; {<span class="cstat-no" title="statement not covered" ></span>t</span>his._handleSwitchMenuIndex(1) }}&gt;
+            &lt;Link to='/orders/OrderList/AllOrders' onClick={this._onCheckout.bind(this, 'one')}&gt;
+              &lt;h4&gt;全部订单&lt;/h4&gt;
+            &lt;/Link&gt;
+          &lt;/li&gt;
+          &lt;li className={this.state.SwitchMenuIndex === 2 &amp;&amp; styles.active} onClick={<span class="fstat-no" title="function not covered" >() =&gt; {<span class="cstat-no" title="statement not covered" ></span>t</span>his._handleSwitchMenuIndex(2) }}&gt;
+            &lt;Link to='/orders/OrderList/WaitingForPaymentOrders' onClick={this._onCheckout.bind(this, 'two')}&gt;
+              &lt;h4&gt;待付款&lt;/h4&gt;
+            &lt;/Link&gt;
+          &lt;/li&gt;
+          &lt;li className={this.state.SwitchMenuIndex === 3 &amp;&amp; styles.active} onClick={<span class="fstat-no" title="function not covered" >() =&gt; {<span class="cstat-no" title="statement not covered" ></span>t</span>his._handleSwitchMenuIndex(3) }}&gt;
+            &lt;Link to='/orders/OrderList/WaitingForHandleOrders' onClick={this._onCheckout.bind(this, 'three')}&gt;
+              &lt;h4&gt;待受理&lt;/h4&gt;
+            &lt;/Link&gt;
+          &lt;/li&gt;
+          &lt;li className={this.state.SwitchMenuIndex === 4 &amp;&amp; styles.active} onClick={<span class="fstat-no" title="function not covered" >() =&gt; {<span class="cstat-no" title="statement not covered" ></span>t</span>his._handleSwitchMenuIndex(4) }}&gt;
+            &lt;Link to='/orders/OrderList/WaitingForConfirmOrders' onClick={this._onCheckout.bind(this, 'four')}&gt;
+              &lt;h4&gt;待确认&lt;/h4&gt;
+            &lt;/Link&gt;
+          &lt;/li&gt;
+          &lt;li className={this.state.SwitchMenuIndex === 5 &amp;&amp; styles.active} onClick={<span class="fstat-no" title="function not covered" >() =&gt; {<span class="cstat-no" title="statement not covered" ></span>t</span>his._handleSwitchMenuIndex(5) }}&gt;
+            &lt;Link to='/orders/OrderList/WaitingForReviewOrders' onClick={this._onCheckout.bind(this, 'five')}&gt;
+              &lt;h4&gt;待评价&lt;/h4&gt;
+            &lt;/Link&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    )
+  }
+  _handleSwitchMenuIndex (menuIndex) {
+<span class="cstat-no" title="statement not covered" >    t</span>his.setState({
+      SwitchMenuIndex: menuIndex
+    })
+  }
+  _onCheckout (e) {
+<span class="cstat-no" title="statement not covered" >    t</span>his.setState({type: e})
+  }
+}
+export default OrderStatusNavigationBar
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Jul 22 2016 09:44:08 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../sorter.js"></script>
+</body>
+</html>

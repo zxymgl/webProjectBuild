@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for routes/Products/routes/ProductList/modules/productList.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">all files</a> / <a href="index.html">routes/Products/routes/ProductList/modules/</a> productList.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">36.89% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>38/103</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">9.76% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/41</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">4.35% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/23</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">38.36% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>28/73</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Immutable, { Record, List } from 'immutable'
+import apiFactory from 'api/apiFactory'
+const api = apiFactory()
+&nbsp;
+const GET_CATEGORY_PRODUCT_LIST_REQUEST = 'GET_CATEGORY_PRODUCT_LIST_REQUEST'
+const GET_CATEGORY_PRODUCT_LIST_SUCCESS = 'GET_CATEGORY_PRODUCT_LIST_SUCCESS'
+const GET_CATEGORY_PRODUCT_LIST_FAILURE = 'GET_CATEGORY_PRODUCT_LIST_FAILURE'
+&nbsp;
+&nbsp;
+const getProducts = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span></span>categoryQuery, priceQuery, pagination) =&gt; <span class="fstat-no" title="function not covered" >dispatch =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  d</span>ispatch({ type: GET_CATEGORY_PRODUCT_LIST_REQUEST })
+<span class="cstat-no" title="statement not covered" >  l</span>et productCategoryId = 'ZC_BrowseRoot'
+<span class="cstat-no" title="statement not covered" >  if (categoryQuery) {</span>
+<span class="cstat-no" title="statement not covered" >    if (categoryQuery.level_1) <span class="cstat-no" title="statement not covered" >p</span></span>roductCategoryId = categoryQuery.level_1
+<span class="cstat-no" title="statement not covered" >    if (categoryQuery.level_2) <span class="cstat-no" title="statement not covered" >p</span></span>roductCategoryId = categoryQuery.level_2
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  r</span>eturn api.products.categories.one.products.get(productCategoryId, { level: 10 }, pagination)
+  .then(<span class="fstat-no" title="function not covered" >json =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    d</span>ispatch({ type: GET_CATEGORY_PRODUCT_LIST_SUCCESS, payload: json })
+  }).catch(<span class="fstat-no" title="function not covered" >error =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    d</span>ispatch({ type: GET_CATEGORY_PRODUCT_LIST_FAILURE, payload: error })
+  })
+}
+&nbsp;
+export const GET_CATEGORY_PRODUCT_LIST_FACETS_REQUEST = 'GET_CATEGORY_PRODUCT_LIST_FACETS_REQUEST'
+export const GET_CATEGORY_PRODUCT_LIST_FACETS_SUCCESS = 'GET_CATEGORY_PRODUCT_LIST_FACETS_SUCCESS'
+export const GET_CATEGORY_PRODUCT_LIST_FACETS_FAILURE = 'GET_CATEGORY_PRODUCT_LIST_FACETS_FAILURE'
+&nbsp;
+export const GET_CATEGORY_PRODUCT_LIST_FACETS_CATEGORIES_SUCCESS = 'GET_CATEGORY_PRODUCT_LIST_FACETS_CATEGORIES_SUCCESS'
+&nbsp;
+const getSearchCriterias = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span></span>) =&gt; <span class="fstat-no" title="function not covered" >dispatch =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  d</span>ispatch({ type: GET_CATEGORY_PRODUCT_LIST_FACETS_REQUEST })
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  l</span>et promises = []
+<span class="cstat-no" title="statement not covered" >  p</span>romises.push(api.products.categories.one.childCategories.get('ZC_BrowseRoot', 3))
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  P</span>romise.all(promises).then(<span class="fstat-no" title="function not covered" >results =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    d</span>ispatch({ type: GET_CATEGORY_PRODUCT_LIST_FACETS_CATEGORIES_SUCCESS, payload: results[0] })
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    d</span>ispatch({ type: GET_CATEGORY_PRODUCT_LIST_FACETS_SUCCESS })
+  }).catch(<span class="fstat-no" title="function not covered" >error =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    d</span>ispatch({ type: GET_CATEGORY_PRODUCT_LIST_FACETS_FAILURE, payload: error })
+  })
+}
+&nbsp;
+export const actions = {
+  getProducts,
+  getSearchCriterias
+}
+&nbsp;
+let PartyContent = Record({
+  partyContentId: '',
+  partyId: '',
+  partyContentTypeEnumId: ''
+})
+&nbsp;
+let ProviderCompany = Record({
+  partyId: '',
+  organizationName: '',
+  partyContentList: new List()
+})
+&nbsp;
+ProviderCompany.prototype.constructor.fromJS = <span class="fstat-no" title="function not covered" >function (values) {</span>
+<span class="cstat-no" title="statement not covered" >  v</span>ar that = this
+<span class="cstat-no" title="statement not covered" >  v</span>ar nested = Immutable.fromJS(values, <span class="fstat-no" title="function not covered" >function (key, value) {</span>
+<span class="cstat-no" title="statement not covered" >    if (key === 'partyContentList') <span class="cstat-no" title="statement not covered" >r</span></span>eturn value.map(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >i</span></span>t =&gt; PartyContent.fromJS(it)).toList()
+<span class="cstat-no" title="statement not covered" >    if (that.prototype[key] &amp;&amp; that.prototype[key].constructor.prototype instanceof Immutable.Record) {</span>
+<span class="cstat-no" title="statement not covered" >      r</span>eturn that.prototype[key].constructor.fromJS(value)
+    }
+<span class="cstat-no" title="statement not covered" >    r</span>eturn value
+  })
+<span class="cstat-no" title="statement not covered" >  r</span>eturn this(nested)
+}
+&nbsp;
+let ProductCategory = Record({
+  productCategoryId: '',
+  categoryName: '',
+  description: ''
+})
+&nbsp;
+let ProductCategoryListItem = Record({
+  productCategory: new ProductCategory(),
+  children: new List()
+})
+&nbsp;
+ProductCategoryListItem.prototype.constructor.fromJS = <span class="fstat-no" title="function not covered" >function (values) {</span>
+<span class="cstat-no" title="statement not covered" >  l</span>et that = this
+<span class="cstat-no" title="statement not covered" >  l</span>et nested = Immutable.fromJS(values, <span class="fstat-no" title="function not covered" >function (key, value) {</span>
+<span class="cstat-no" title="statement not covered" >    if (key === 'children') <span class="cstat-no" title="statement not covered" >r</span></span>eturn value.map(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >i</span></span>t =&gt; ProductCategoryListItem.fromJS(it)).toList()
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (that.prototype[key] &amp;&amp; that.prototype[key].constructor.prototype instanceof Immutable.Record) {</span>
+<span class="cstat-no" title="statement not covered" >      r</span>eturn that.prototype[key].constructor.fromJS(value)
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    r</span>eturn value
+  })
+<span class="cstat-no" title="statement not covered" >  r</span>eturn this(nested)
+}
+&nbsp;
+let ProductPrice = Record({
+  productPriceId: '',
+  price: '',
+  priceTypeEnumId: '',
+  pricePurposeEnumId: ''
+})
+&nbsp;
+let ProductGeo = Record({
+  geoId: '',
+  geoTypeEnumId: '',
+  geoName: ''
+})
+&nbsp;
+let ProductContent = Record({
+  productContentId: '',
+  productContentTypeEnumId: '',
+  contentText: '',
+  contentUrl: ''
+})
+&nbsp;
+let Product = Record({
+  productId: '',
+  productName: '',
+  productPriceList: new List(),
+  productCategoryList: new List(),
+  productGeoList: new List(),
+  productContentList: new List(),
+  providerCompany: new ProviderCompany()
+})
+&nbsp;
+Product.prototype.constructor.fromJS = <span class="fstat-no" title="function not covered" >function (values) {</span>
+<span class="cstat-no" title="statement not covered" >  l</span>et that = this
+<span class="cstat-no" title="statement not covered" >  l</span>et nested = Immutable.fromJS(values, <span class="fstat-no" title="function not covered" >function (key, value) {</span>
+<span class="cstat-no" title="statement not covered" >    if (key === 'productPriceList') <span class="cstat-no" title="statement not covered" >r</span></span>eturn value.map(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >i</span></span>t =&gt; ProductPrice.fromJS(it)).toList()
+<span class="cstat-no" title="statement not covered" >    if (key === 'productCategoryList') <span class="cstat-no" title="statement not covered" >r</span></span>eturn value.map(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >i</span></span>t =&gt; ProductCategory.fromJS(it)).toList()
+<span class="cstat-no" title="statement not covered" >    if (key === 'productGeoList') <span class="cstat-no" title="statement not covered" >r</span></span>eturn value.map(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >i</span></span>t =&gt; ProductGeo.fromJS(it)).toList()
+<span class="cstat-no" title="statement not covered" >    if (key === 'productContentList') <span class="cstat-no" title="statement not covered" >r</span></span>eturn value.map(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >i</span></span>t =&gt; ProductContent.fromJS(it)).toList()
+<span class="cstat-no" title="statement not covered" >    if (that.prototype[key] &amp;&amp; that.prototype[key].constructor.prototype instanceof Immutable.Record) {</span>
+<span class="cstat-no" title="statement not covered" >      r</span>eturn that.prototype[key].constructor.fromJS(value)
+    }
+<span class="cstat-no" title="statement not covered" >    r</span>eturn value
+  })
+<span class="cstat-no" title="statement not covered" >  r</span>eturn this(nested)
+}
+&nbsp;
+let InitialState = new Record({
+  isFetching: false,
+  productCategoryList: new List(),
+  productList: new List()
+})
+&nbsp;
+const initialState = new InitialState()
+&nbsp;
+export default <span class="fstat-no" title="function not covered" >function productListReducer (state = initialState, action) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span>
+<span class="cstat-no" title="statement not covered" >  if (!(state instanceof InitialState)) <span class="cstat-no" title="statement not covered" >r</span></span>eturn initialState.merge(state)
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  l</span>et json = action.payload
+<span class="cstat-no" title="statement not covered" >  s</span>witch (action.type) {
+    case GET_CATEGORY_PRODUCT_LIST_FACETS_CATEGORIES_SUCCESS:
+<span class="cstat-no" title="statement not covered" >      l</span>et productCategoryList = List.of(...json.productCategoryList.map(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >i</span></span>t =&gt; ProductCategoryListItem.fromJS(it)))
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('productCategoryList', productCategoryList)
+&nbsp;
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  r</span>eturn state
+}
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Jul 22 2016 09:44:08 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>

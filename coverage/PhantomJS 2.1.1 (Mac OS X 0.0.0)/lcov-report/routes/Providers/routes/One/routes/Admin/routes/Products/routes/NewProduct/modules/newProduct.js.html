@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for routes/Providers/routes/One/routes/Admin/routes/Products/routes/NewProduct/modules/newProduct.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../../../../../../index.html">all files</a> / <a href="index.html">routes/Providers/routes/One/routes/Admin/routes/Products/routes/NewProduct/modules/</a> newProduct.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>37/74</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>8/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">13.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/15</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">40.98% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>25/61</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Immutable, { Record, List } from 'immutable'
+&nbsp;
+import apiFactory from '../../../../../../../../../../../api/apiFactory'
+&nbsp;
+const api = apiFactory()
+// 获取首页目录的产品种类
+const GET_PRODUCT_CATEGORIES_REQUEST = 'GET_HOME_PRODUCT_CATEGORIES_REQUEST'
+const GET_PRODUCT_CATEGORIES_SUCCESS = 'GET_HOME_PRODUCT_CATEGORIES_SUCCESS'
+const GET_PRODUCT_CATEGORIES_FAILURE = 'GET_HOME_PRODUCT_CATEGORIES_FAILURE'
+export <span class="fstat-no" title="function not covered" >function getHomeProductCategories () {</span>
+<span class="cstat-no" title="statement not covered" >  r</span>eturn <span class="fstat-no" title="function not covered" >dispatch =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    d</span>ispatch({ type: GET_PRODUCT_CATEGORIES_REQUEST })
+<span class="cstat-no" title="statement not covered" >    r</span>eturn api.products.categories.one.childCategories.get('ZC_BrowseRoot', '3')
+      .then(<span class="fstat-no" title="function not covered" >json =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        d</span>ispatch({
+          type: GET_PRODUCT_CATEGORIES_SUCCESS,
+          payload: json
+        })
+      }).catch(<span class="fstat-no" title="function not covered" >error =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        d</span>ispatch({
+          type: GET_PRODUCT_CATEGORIES_FAILURE,
+          payload: error
+        })
+      })
+  }
+}
+// 创建一个产品
+const CREATE_PRODUCT_ALL_REQUEST = 'CREATE_PRODUCT_ALL_REQUEST'
+const CREATE_PRODUCT_ALL_SUCCESS = 'CREATE_PRODUCT_ALL_SUCCESS'
+const CREATE_PRODUCT_ALL_FAILURE = 'CREATE_PRODUCT_ALL_FAILURE'
+// 创建服务 ID 价格 详细内容 服务条款
+const POST_CREATE_PRODUCT_ID_SUCCESS = 'POST_CREATE_PRODUCT_ID_SUCCESS'
+const POST_CREATE_PRODUCT_PRICE_SUCCESS = 'POST_CREATE_PRODUCT_PRICE_SUCCESS'
+const POST_CREATE_PRODUCT_CONTENT_SUCCESS = 'POST_CREATE_PRODUCT_CONTENT_SUCCESS'
+const POST_CREATE_PRODUCT_CONTENT2_SUCCESS = 'POST_CREATE_PRODUCT_CONTENT2_SUCCESS'
+&nbsp;
+export <span class="fstat-no" title="function not covered" >function creatProduct (state) {</span>
+<span class="cstat-no" title="statement not covered" >  r</span>eturn <span class="fstat-no" title="function not covered" >dispatch =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    d</span>ispatch({ type: CREATE_PRODUCT_ALL_REQUEST})
+<span class="cstat-no" title="statement not covered" >    r</span>eturn api.products.create({productCategoryId: state.currentCategoryId})
+      .then(<span class="fstat-no" title="function not covered" >json =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        c</span>onsole.log(json)
+<span class="cstat-no" title="statement not covered" >        d</span>ispatch({
+          type: POST_CREATE_PRODUCT_ID_SUCCESS,
+          payload: json
+        })
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        l</span>et promises = []
+<span class="cstat-no" title="statement not covered" >        l</span>et priceData = {
+          price: state.price,
+          productStoreId: 'ZC_DEFAULT'
+        }
+<span class="cstat-no" title="statement not covered" >        p</span>romises.push(api.products.one.prices.create(json.productId, priceData).then(<span class="fstat-no" title="function not covered" >json =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >          c</span>onsole.log(json)
+<span class="cstat-no" title="statement not covered" >          d</span>ispatch({ type: POST_CREATE_PRODUCT_PRICE_SUCCESS, payload: json })
+        }))
+<span class="cstat-no" title="statement not covered" >        l</span>et content1Data = {
+          contentType: 'text',
+          contentText: state.contentText1,
+          productContentTypeEnumId: 'PcntDescriptionLong'
+        }
+<span class="cstat-no" title="statement not covered" >        p</span>romises.push(api.products.one.contents.text.create(json.productId, content1Data).then(<span class="fstat-no" title="function not covered" >json =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >          c</span>onsole.log(json)
+<span class="cstat-no" title="statement not covered" >          d</span>ispatch({ type: POST_CREATE_PRODUCT_CONTENT_SUCCESS, payload: json })
+        }))
+<span class="cstat-no" title="statement not covered" >        c</span>onsole.log('starting to creat spec --')
+<span class="cstat-no" title="statement not covered" >        l</span>et content2Data = {
+          contentType: 'text',
+          contentText: state.contentText2,
+          productContentTypeEnumId: 'PcntTermsConditions'
+        }
+<span class="cstat-no" title="statement not covered" >        p</span>romises.push(api.products.one.contents.text.create(json.productId, content2Data).then(<span class="fstat-no" title="function not covered" >json =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >          c</span>onsole.log(json)
+<span class="cstat-no" title="statement not covered" >          d</span>ispatch({ type: POST_CREATE_PRODUCT_CONTENT2_SUCCESS, payload: json })
+        }))
+<span class="cstat-no" title="statement not covered" >        P</span>romise.all(promises).then(<span class="fstat-no" title="function not covered" >values =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >          d</span>ispatch({ type: CREATE_PRODUCT_ALL_SUCCESS })
+        }).catch(<span class="fstat-no" title="function not covered" >error =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >          d</span>ispatch({ type: CREATE_PRODUCT_ALL_FAILURE, payload: error })
+        })
+      }).catch(<span class="fstat-no" title="function not covered" >error =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        d</span>ispatch({
+          type: CREATE_PRODUCT_ALL_FAILURE,
+          payload: error
+        })
+      })
+  }
+}
+export const actions = {
+  getHomeProductCategories,
+  creatProduct
+}
+/* productCategory结构 */
+let ProductCategoryRecord =  Record({
+  productCategory: new (Record)(
+    {
+      categoryName: '',
+      description: '',
+      lastUpdatedStamp: '',
+      productCategoryId: '',
+      productCategoryTypeEnumId: '',
+      pseudoId: ''
+    }),
+  children: new List()
+})
+let InitialState = Record({
+  isFetching: false,
+  productCategoryList: new List(),
+  productId: '',
+  productPriceId: '',
+  productContentId1: '',
+  productContentId2: ''
+})
+&nbsp;
+const initialState = new InitialState()
+&nbsp;
+export default function reducer (state = initialState, action) <span class="branch-1 cbranch-no" title="branch not covered" >{</span>
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (!(state instanceof InitialState)) <span class="cstat-no" title="statement not covered" >r</span>eturn initialState.merge(state)
+  let json
+  switch (action.type) {
+    case GET_PRODUCT_CATEGORIES_REQUEST :
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isFetching', true)
+    case GET_PRODUCT_CATEGORIES_SUCCESS :
+<span class="cstat-no" title="statement not covered" >      v</span>ar pcMap = Immutable.fromJS(action.payload)
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isFetching', false)
+        .set('productCategoryList', pcMap.get('productCategoryList'))
+    case GET_PRODUCT_CATEGORIES_FAILURE:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isFetching', false)
+    /* newRequest */
+    case CREATE_PRODUCT_ALL_REQUEST:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isFetching', true)
+    case CREATE_PRODUCT_ALL_SUCCESS :
+<span class="cstat-no" title="statement not covered" >      j</span>son = action.payload
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isFetching', false)
+        .set('productId', json.productId)
+    case CREATE_PRODUCT_ALL_FAILURE:
+<span class="cstat-no" title="statement not covered" >      r</span>eturn state.set('isFetching', false)
+  }
+  return state
+}
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Jul 22 2016 09:44:08 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../../../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../../../../../../sorter.js"></script>
+</body>
+</html>

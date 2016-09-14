@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for routes/Order/OrderPlacing/components/Payment/components/PayStatus/PaymentStatus.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../../index.html">all files</a> / <a href="index.html">routes/Order/OrderPlacing/components/Payment/components/PayStatus/</a> PaymentStatus.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80.65% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>25/31</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">62.5% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>5/8</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">1 function</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'
+&nbsp;
+import img from '../OrderSuccess/assets/orderPlaningSuccess.png'
+&nbsp;
+import CurrentStyles from './PayStatus.scss'
+class PayStatus extends React.Component {
+<span class="fstat-no" title="function not covered" >  constructor (props) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span>
+    super(props)
+<span class="cstat-no" title="statement not covered" >    t</span>his.state = {
+      payWay: '支付宝'
+    }
+  }
+  render () {
+<span class="cstat-no" title="statement not covered" >    c</span>onsole.log(this.state.payWay)
+<span class="cstat-no" title="statement not covered" >    r</span>eturn (
+      &lt;div className='col-lg-12'&gt;
+        &lt;div className='ibox float-e-margins'&gt;
+          &lt;div className='ibox-content '&gt;
+            &lt;div className='row'&gt;
+              &lt;div className='col-sm-8'&gt;
+                &lt;h3&gt;支付成功&lt;/h3&gt;
+                &lt;h3 className={CurrentStyles.reminderBtn}&gt;&lt;img src={img} /&gt;您的订单提交成功,订单号:2016129831
+                &lt;/h3&gt;
+                &lt;div className={CurrentStyles.reminderBtn}&gt;
+                  &lt;button className= 'btn btn-primary' &gt;
+                    &lt;strong className='text-center'&gt;催单&lt;/strong&gt;
+                  &lt;/button&gt;
+                &lt;/div&gt;
+                &lt;p className={CurrentStyles.reminderBtn}&gt;温馨提示：服务商24小时内没有受理订单，订单会自动提醒
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div className='col-sm-4'&gt;
+                &lt;h3 className={CurrentStyles.reminderBtn}&gt;查看我的订单&lt;/h3&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+export default PayStatus
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Jun 03 2016 09:44:12 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../../sorter.js"></script>
+</body>
+</html>

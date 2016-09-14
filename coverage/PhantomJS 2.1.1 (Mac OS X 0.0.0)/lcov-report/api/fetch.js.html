@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for api/fetch.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">api/</a> fetch.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">18.92% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>35/185</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">6.6% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>7/106</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">29.41% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/17</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">16.36% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>9/55</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">2 statements, 2 functions</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import 'regenerator-runtime'
+import _ from 'lodash/core'
+&nbsp;
+<span class="missing-if-branch" title="if path not taken" >I</span>if (typeof process !== 'undefined' &amp;&amp; process.env.IS_BROWSER) {
+<span class="cstat-no" title="statement not covered" >  r</span>equire('es6-promise').polyfill()
+<span class="cstat-no" title="statement not covered" >  r</span>equire('whatwg-fetch')
+}
+&nbsp;
+import apiFactory from './apiFactory'
+&nbsp;
+import config from './config'
+&nbsp;
+let API_BASE_URL = config.baseUrl
+&nbsp;
+export default <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" >a</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>sync function decoratedFetch (opts) {
+<span class="cstat-no" title="statement not covered" >  o</span>pts = _.extend({
+    method: 'GET',
+    url: null,
+    query: null,
+    pagination: null,
+    body: null,
+    headers: { },
+    useToken: false,
+    callback: null
+  }, opts)
+&nbsp;
+  if (opts.useToken) return await _fetch(opts)
+&nbsp;
+  if (apiFactory().isFetchingApiKey) {
+    return apiFactory().getApiKey().then(<span class="fstat-no" title="function not covered" >data =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      r</span>eturn _fetch(opts)
+    })
+  }
+&nbsp;
+  return await _fetch(opts)
+}
+&nbsp;
+<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" >a</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>sync function _fetch (opts) {
+  let <span class="cstat-no" title="statement not covered" >reqOpts = {</span>
+    method: opts.method
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (opts.useToken) {</span>
+//    reqOpts = _.extend(reqOpts, { headers: { token: apiFactory().token } })
+<span class="cstat-no" title="statement not covered" >    r</span>eqOpts = _.extend(reqOpts, { headers: { Authorization: 'Basic am9obi5kb2U6bW9xdWk=' } })
+  } else {
+<span class="cstat-no" title="statement not covered" >    r</span>eqOpts = _.extend(reqOpts, { headers: { api_key: apiFactory().apiKey } })
+  }
+&nbsp;
+  if (!_.isEmpty(opts.headers)) {
+<span class="cstat-no" title="statement not covered" >    for (let <span class="cstat-no" title="statement not covered" >key of Object.keys(opts.headers)) {</span></span>
+<span class="cstat-no" title="statement not covered" >      r</span>eqOpts.headers[key] = opts.headers[key]
+    }
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (opts.method === 'POST' || opts.method === 'PUT' || opts.method === 'PATCH') {</span>
+<span class="cstat-no" title="statement not covered" >    r</span>eqOpts.headers['Accept'] = 'application/json'
+<span class="cstat-no" title="statement not covered" >    if (!reqOpts.headers['Content-Type']) <span class="cstat-no" title="statement not covered" >r</span></span>eqOpts.headers['Content-Type'] = 'application/json'
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (opts.body) {</span>
+<span class="cstat-no" title="statement not covered" >    if (checkRequestContentType(reqOpts, 'multipart/form-data')) {</span>
+<span class="cstat-no" title="statement not covered" >      r</span>eqOpts.body = opts.body
+    } else <span class="cstat-no" title="statement not covered" >if (checkRequestContentType(reqOpts, 'application/json')) {</span>
+<span class="cstat-no" title="statement not covered" >      r</span>eqOpts.body = JSON.stringify(opts.body)
+    }
+  }
+&nbsp;
+  let <span class="cstat-no" title="statement not covered" >queryString = ''</span>
+  if (opts.query) {
+<span class="cstat-no" title="statement not covered" >    for (let <span class="cstat-no" title="statement not covered" >key of Object.keys(opts.query)) {</span></span>
+<span class="cstat-no" title="statement not covered" >      i</span>f (!queryString) <span class="cstat-no" title="statement not covered" >queryString = key + '=' + opts.query[key]</span>
+      else <span class="cstat-no" title="statement not covered" >q</span>ueryString += '&amp;' + key + '=' + opts.query[key]
+    }
+  }
+  if (opts.pagination) {
+<span class="cstat-no" title="statement not covered" >    for (let <span class="cstat-no" title="statement not covered" >key of Object.keys(opts.pagination)) {</span></span>
+<span class="cstat-no" title="statement not covered" >      i</span>f (!queryString) <span class="cstat-no" title="statement not covered" >queryString = key + '=' + opts.pagination[key]</span>
+      else <span class="cstat-no" title="statement not covered" >q</span>ueryString += '&amp;' + key + '=' + opts.pagination[key]
+    }
+  }
+<span class="cstat-no" title="statement not covered" >  c</span>onsole.log('fetching ' + API_BASE_URL + opts.url + (queryString ? '?' + queryString : ''))
+<span class="cstat-no" title="statement not covered" >  c</span>onsole.log(reqOpts)
+  return await fetch(API_BASE_URL + opts.url + (queryString ? '?' + queryString : ''), reqOpts)
+    .then(<span class="fstat-no" title="function not covered" >response =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      if (response.status === 200 || response.status === 201) {</span>
+<span class="cstat-no" title="statement not covered" >        if (checkResponseContentType(response, 'application/json')) {</span>
+<span class="cstat-no" title="statement not covered" >          if (!response.headers.has('X-Total-Count')) <span class="cstat-no" title="statement not covered" >r</span></span>eturn response.json()
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          r</span>eturn response.json().then(<span class="fstat-no" title="function not covered" >json =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            r</span>eturn new Promise(<span class="fstat-no" title="function not covered" >(resolve, reject) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >              r</span>esolve(_.extend(json, {
+                pageIndex: parseInt(response.headers.get('X-Page-Index')),
+                pageMaxIndex: parseInt(response.headers.get('X-Page-Max-Index')),
+                pageRangeHigh: parseInt(response.headers.get('X-Page-Range-High')),
+                pageRangeLow: parseInt(response.headers.get('X-Page-Range-Low')),
+                totalCount: parseInt(response.headers.get('X-Total-Count'))
+              }))
+            })
+          }).catch(<span class="fstat-no" title="function not covered" >error =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            t</span>hrow error
+          })
+        } else <span class="cstat-no" title="statement not covered" >if (checkResponseContentType(response, 'text/plain') || checkResponseContentType(response, 'text/html')) {</span>
+<span class="cstat-no" title="statement not covered" >          r</span>eturn response.text()
+        }
+      } else <span class="cstat-no" title="statement not covered" >if (response.status === 401) {</span>
+<span class="cstat-no" title="statement not covered" >        a</span>piFactory().redirectLoginCallback()
+      } else {
+<span class="cstat-no" title="statement not covered" >        t</span>hrow response
+      }
+    }).catch(<span class="fstat-no" title="function not covered" >error =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      t</span>hrow error
+    })
+}
+&nbsp;
+// Can check request or response header if a content type exists
+<span class="fstat-no" title="function not covered" >function checkResponseContentType (r, contentType) {</span>
+<span class="cstat-no" title="statement not covered" >  if (r.headers.get('content-type')) <span class="cstat-no" title="statement not covered" >r</span></span>eturn r.headers.get('content-type').includes(contentType)
+<span class="cstat-no" title="statement not covered" >  r</span>eturn false
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function checkRequestContentType (r, contentType) {</span>
+<span class="cstat-no" title="statement not covered" >  if (r.headers['Content-Type']) <span class="cstat-no" title="statement not covered" >r</span></span>eturn r.headers['Content-Type'].includes(contentType)
+<span class="cstat-no" title="statement not covered" >  r</span>eturn false
+}
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Jul 22 2016 09:44:08 GMT+0800 (CST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for routes/RegionSelection/components/ProvinceAndCitySelection/ProvinceAndCitySelection.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">all files</a> / <a href="index.html">routes/RegionSelection/components/ProvinceAndCitySelection/</a> ProvinceAndCitySelection.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">60% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>30/50</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">61.54% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>8/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">37.5% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>9/24</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">6 functions</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'
+import classNames from 'classnames'
+import styles from './ProvinceAndCitySelection.scss'
+import stepsStyles from 'styles/inspinia/plugins/steps/jquery.steps.scss'
+&nbsp;
+var provinceId = 0
+let cities = []
+class ProvinceAndCitySelection extends React.Component {
+<span class="fstat-no" title="function not covered" >  constructor (props) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span>
+    super(props)
+<span class="cstat-no" title="statement not covered" >    t</span>his.state = {
+      currentType: 0
+    }
+<span class="cstat-no" title="statement not covered" >    p</span>rovinceId = 0
+<span class="cstat-no" title="statement not covered" >    t</span>his._bind('_onChangeOption', '_onSelectOption')
+  }
+  _bind (...<span class="cstat-no" title="statement not covered" >methods) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span>
+<span class="cstat-no" title="statement not covered" >    m</span>ethods.forEach(<span class="fstat-no" title="function not covered" >(method) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      t</span>his[method] = this[method].bind(this)
+    })
+  }
+  render () <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    r</span>eturn (
+      &lt;div&gt;
+        &lt;div&gt;
+          &lt;div className={classNames('clearfix', stepsStyles.steps)}&gt;
+            &lt;div className='col-md-3'&gt;
+              &lt;span&gt;选择省份:&lt;/span&gt;
+              &amp;#160;&amp;#160;&amp;#160;
+              &lt;select className={classNames(styles.selectoor)} id='ctx2000' onChange={this._onChangeOption}&gt;
+                {this.props.data.map(<span class="fstat-no" title="function not covered" >(v, i) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                  r</span>eturn (&lt;option id={i} key={i} className={styles.selectorr} value={i}&gt;
+                    {v.get('provinceName')}
+                  &lt;/option&gt;)
+                })}
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div className='col-md-3'&gt;
+              &lt;select className={styles.selectoor} id='ctx3000' onChange={this._onSelectOption}&gt;
+                {this.props.data.map(<span class="fstat-no" title="function not covered" >(v, i) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                  t</span>his.props.data.get(provinceId).get('cityList').map(<span class="fstat-no" title="function not covered" >(vv, ii) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                    r</span>eturn cities.push(&lt;option key={ii} className={styles.selectorr} value={ii}&gt;{vv.get('cityName')}&lt;/option&gt;)
+                  })
+                })}
+                {cities}
+              &lt;/select&gt;
+              &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;
+              &lt;button type='submit' className={styles.pal}&gt;
+                &lt;strong&gt;确定&lt;/strong&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div className='col-md-4'&gt;
+              &lt;span&gt;直接搜索:&lt;/span&gt;
+              &amp;#160;&amp;#160;&amp;#160;
+              &lt;input className={styles.selectoor} type='text'
+                     defaultValue='请输入城市名称' onChange={this._onChange} /&gt;
+              &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;
+              &lt;button type='submit' className={styles.pal}&gt;
+                &lt;strong&gt;搜索&lt;/strong&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div className='col-md-2'&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    )
+  }
+  componentDidUpdate (prevProps, prevState) {
+  }
+  _onChangeOption () {
+<span class="cstat-no" title="statement not covered" >    v</span>ar obj = window.document.getElementById('ctx2000')
+<span class="cstat-no" title="statement not covered" >    p</span>rovinceId = obj.options[obj.selectedIndex].id
+<span class="cstat-no" title="statement not covered" >    t</span>his.setState({currentType: provinceId})
+<span class="cstat-no" title="statement not covered" >    c</span>ities.splice(0, cities.length)
+  }
+  _onSelectOption () {
+  }
+  _onChange () {
+  }
+}
+ProvinceAndCitySelection.propTypes = {
+  data: React.PropTypes.object
+}
+export default ProvinceAndCitySelection
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Jul 22 2016 09:44:08 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

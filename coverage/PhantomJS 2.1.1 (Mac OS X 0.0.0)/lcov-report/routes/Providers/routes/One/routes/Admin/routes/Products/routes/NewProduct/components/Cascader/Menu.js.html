@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for routes/Providers/routes/One/routes/Admin/routes/Products/routes/NewProduct/components/Cascader/Menu.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../../../../../../../index.html">all files</a> / <a href="index.html">routes/Providers/routes/One/routes/Admin/routes/Products/routes/NewProduct/components/Cascader/</a> Menu.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">70.27% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>26/37</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">38.46% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>5/13</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">2 functions</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { PropTypes } from 'react'
+import curStyle from './Cascader.scss'
+import classNames from 'classnames'
+class Menu extends React.Component {
+<span class="fstat-no" title="function not covered" >  constructor (props) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span>
+    super(props)
+<span class="cstat-no" title="statement not covered" >    t</span>his.state = {
+    }
+<span class="cstat-no" title="statement not covered" >    t</span>his._onClick = this._onClick.bind(this)
+  }
+  static propTypes = {
+    onItemClick: PropTypes.func,
+    label: PropTypes.string,
+    reactKey: PropTypes.number,
+    activeLevel: PropTypes.number,
+    categoryId: PropTypes.string,
+    isActive: PropTypes.bool
+  }
+&nbsp;
+  render () {
+<span class="cstat-no" title="statement not covered" >    l</span>et curClassName
+<span class="cstat-no" title="statement not covered" >    if (this.props.isActive) {</span>
+<span class="cstat-no" title="statement not covered" >      c</span>urClassName = classNames(curStyle.active, 'm-t-sm', curStyle.noborderRadius)
+    } else {
+<span class="cstat-no" title="statement not covered" >      c</span>urClassName = classNames('m-t-sm',curStyle.noborderRadius)
+    }
+<span class="cstat-no" title="statement not covered" >    r</span>eturn (
+      &lt;li className={curClassName} onClick={this._onClick}&gt;
+        &lt;label className='m-l'&gt;{this.props.label}&lt;/label&gt; &lt;span className='glyphicon glyphicon-menu-right pull-right '&gt;&lt;/span&gt;
+      &lt;/li&gt;
+    )
+  }
+  _onClick () {
+<span class="cstat-no" title="statement not covered" >    t</span>his.props.onItemClick(this.props.activeLevel, this.props.reactKey ,this.props.categoryId)
+  }
+}
+&nbsp;
+export default Menu
+&nbsp;
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Jul 22 2016 09:44:08 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../../../../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../../../../../../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for routes/Messages/container/MessagesContainer.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">routes/Messages/container/</a> MessagesContainer.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>30/45</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">54.55% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>12/22</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">1 function</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React ,{ PropTypes }from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import { Nav, NavItem , Table } from 'react-bootstrap'
+&nbsp;
+import { Map } from 'immutable'
+/* 组件*/
+&nbsp;
+const actions = [
+]
+<span class="fstat-no" title="function not covered" >function mapStateToProps (state) {</span>
+<span class="cstat-no" title="statement not covered" >  r</span>eturn {
+    orderPlacingData: state.orderPlacingData
+  }
+}
+<span class="fstat-no" title="function not covered" >function mapDispatchToProps (dispatch) <span class="cstat-no" title="statement not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >  c</span>onst creators = Map()
+    .merge(...actions)
+    .filter(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >v</span></span>alue =&gt; typeof value === 'function')
+    .toObject()
+<span class="cstat-no" title="statement not covered" >  r</span>eturn {
+    actions: bindActionCreators(creators, dispatch),
+    dispatch
+  }
+}
+class MessagesContainer extends React.Component {
+<span class="fstat-no" title="function not covered" >  constructor (props) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span></span>
+    super(props)
+<span class="cstat-no" title="statement not covered" >    t</span>his.state = {
+      data: [1,2,3,4]
+    }
+<span class="cstat-no" title="statement not covered" >    t</span>his.handleSelect = this.handleSelect.bind(this)
+  }
+  handleSelect = <span class="fstat-no" title="function not covered" >(selectedKey) =&gt; {</span>
+&nbsp;
+  }
+  render () {
+<span class="cstat-no" title="statement not covered" >    r</span>eturn (
+      &lt;div className='col-lg-10 col-xs-offset-1 ' style={{marginTop :60}}&gt;
+        &lt;ul className='list-group '&gt;
+          {this.props.data.map(<span class="fstat-no" title="function not covered" >function (subMenu, index) {</span>
+<span class="cstat-no" title="statement not covered" >            if (index === 0) {</span>
+<span class="cstat-no" title="statement not covered" >              r</span>eturn (
+                &lt;li className='list-group-item'&gt;
+                  &lt;div &gt;
+                    &lt;Nav bsStyle='pills' activeKey={1} onSelect={this.handleSelect}&gt;
+                      &lt;NavItem eventKey={1} href="/home"&gt;系统消息&lt;/NavItem&gt;
+                      &lt;NavItem eventKey={2} title="Item"&gt;订单消息&lt;/NavItem&gt;
+                      &lt;p className='text-right'&gt;删除全部&lt;/p&gt;
+                    &lt;/Nav&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+              )
+            }
+<span class="cstat-no" title="statement not covered" >            r</span>eturn (
+              &lt;li className='list-group-item'&gt;
+                &lt;table className='table '&gt;
+                  &lt;tbody&gt;
+                    &lt;tr &gt;
+                      &lt;td className='no-top-border'&gt;
+                        &lt;input type='checkbox' /&gt;
+                      &lt;/td &gt;
+                      &lt;td className='no-top-border'&gt;
+                        &lt;ul className='list-unstyled'&gt;
+                          &lt;li&gt;订单状态&lt;/li&gt;
+                          &lt;li&gt;您好，您的订单已完成，状态已变更为：[办理成功] 请前往我的订单查看详情，确认订单完成可以进行评价&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/td&gt;
+                      &lt;td className='no-top-border'&gt;
+                        &lt;p className='text-right'&gt;12:10&lt;/p&gt;
+                        &lt;p className='text-right'&gt;删除全部&lt;/p&gt;
+                      &lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/tbody&gt;
+                &lt;/table&gt;
+              &lt;/li&gt;
+            )
+          }.bind(this))}
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+MessagesContainer.propTypes = {
+  data: React.PropTypes.array
+}
+MessagesContainer.defaultProps = {
+  data: [1,2,3,4]
+}
+export default connect(mapStateToProps, mapDispatchToProps)(MessagesContainer)
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Jul 22 2016 09:44:08 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>
